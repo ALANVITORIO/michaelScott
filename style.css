@@ -1,0 +1,181 @@
+body {
+  background-color: #000214;
+}
+
+.content-section {
+  background-image: url('michael2.png'); /* Caminho para sua imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0; /* Ajuste o padding conforme necessário */
+}
+
+.text-holder {
+  padding: 50px; /* Ajuste conforme necessário para espaçamento */
+}
+
+.bg2 {
+  background-image: url('micheal3.png'); /* Caminho para sua imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  padding: 100px; /* Ajuste o padding conforme necessário */
+}
+
+@keyframes soundWaveEffect {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.custom-button {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para efeito 3D */
+  position: relative; /* Posição relativa para pseudo-elementos e ícones */
+  overflow: hidden; /* Garante que pseudo-elementos não saiam do botão */
+  background: linear-gradient(
+    45deg,
+    #0056b3,
+    #0099cc,
+    #0056b3
+  ); /* Gradiente de azul */
+  background-size: 200% 200%; /* Tamanho do background ajustado para a animação */
+  animation: soundWaveEffect 4s infinite linear; /* Adiciona o efeito de onda */
+}
+
+.custom-button:hover,
+.custom-button:focus {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra maior para hover */
+  transform: translateY(-3px); /* Eleva o botão */
+}
+
+.custom-button:active {
+  transform: translateY(-1px); /* Efeito de pressionar */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Sombra menor para pressionar */
+}
+
+.custom-button i {
+  margin-right: 0.5rem; /* Espaçamento para o ícone */
+}
+
+.destaque {
+  font-size: 2.5rem;
+  background: -webkit-linear-gradient(45deg, #9aa8e6, #0088cc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+ul.list-unstyled {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+ul.list-unstyled li {
+  margin-bottom: 0.5rem; /* Espaçamento entre os itens da lista */
+}
+
+ul.list-unstyled li i {
+  margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto */
+}
+
+.separador {
+  height: 20px;
+  background: linear-gradient(to right, transparent, #1062b5, transparent);
+  filter: blur(20px);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 640px;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Para garantir que o conteúdo fique acima da imagem de fundo */
+.content-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.alinha-esquerda {
+  text-align: left;
+}
+
+.testimonials {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonials::before,
+.testimonials::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-color: #3e79cb;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
+}
+
+.testimonials::before {
+  top: -100px;
+  left: -100px;
+  animation: rotateBall1 5s linear infinite;
+}
+
+.testimonials::after {
+  top: -150px;
+  left: -150px;
+  animation: rotateBall2 6s linear infinite;
+}
+
+@keyframes rotateBall1 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+  25% {
+    transform: translate(50vw, 40vh) rotate(90deg);
+  }
+  50% {
+    transform: translate(-20vw, 80vh) rotate(180deg);
+  }
+  75% {
+    transform: translate(30vw, -20vh) rotate(270deg);
+  }
+}
+
+@keyframes rotateBall2 {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0);
+  }
+  20% {
+    transform: translate(-30vw, 50vh) rotate(120deg);
+  }
+  40% {
+    transform: translate(40vw, -30vh) rotate(240deg);
+  }
+  60% {
+    transform: translate(-50vw, 20vh) rotate(300deg);
+  }
+  80% {
+    transform: translate(20vw, -40vh) rotate(360deg);
+  }
+}

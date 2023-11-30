@@ -14,6 +14,13 @@ p {
   padding: 100px 0; /* Ajuste o padding conforme necessário */
 }
 
+/* Mídia query para dispositivos com largura máxima de 768px (tablets e smartphones) */
+@media (max-width: 768px) {
+  .content-section {
+    background-image: url('hero-responsivo.png'); /* Nova imagem de fundo para dispositivos móveis */
+  }
+}
+
 .text-holder {
   padding: 50px; /* Ajuste conforme necessário para espaçamento */
 }
@@ -240,3 +247,5 @@ h1 {
     0 0 40px #0099cc; /* Efeito de brilho */
   border-radius: 10px; /* Bordas arredondadas */
 }
+
+/* MOBILE */

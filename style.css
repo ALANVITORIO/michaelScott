@@ -179,3 +179,42 @@ ul.list-unstyled li i {
     transform: translate(20vw, -40vh) rotate(360deg);
   }
 }
+.bonus-box {
+  border: 2px solid #0099cc; /* Linha azul */
+  padding: 15px; /* Espaçamento interno reduzido */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0px 0px 20px #0099cc; /* Efeito de brilho/blur */
+  margin: 20px; /* Espaçamento entre os boxes */
+  /* Diminuir a largura total do box */
+  max-width: 250px; /* Você pode ajustar isso conforme necessário */
+}
+
+.titulo-brilhante {
+  color: #0099cc; /* Cor do texto */
+  text-shadow: 0 0 10px #0099cc, 0 0 20px #0099cc, 0 0 30px #0099cc,
+    0 0 40px #0099cc; /* Efeito de brilho */
+}
+@keyframes piscarBrilho {
+  0%,
+  100% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: 0 0 10px #0099cc, 0 0 20px #0099cc, 0 0 30px #0099cc,
+      0 0 40px #0099cc;
+  }
+}
+
+.titulo-brilhante {
+  color: #0099cc; /* Cor do texto */
+  animation: piscarBrilho 4.5s infinite alternate; /* Efeito de piscar */
+}
+
+.marcador {
+  border-top: 4px solid #0099cc; /* Linha azul sólida na parte superior */
+  width: 45px;
+  margin: 10px auto; /* Centraliza o marcador */
+  box-shadow: 0 0 10px #0099cc, 0 0 20px #0099cc, 0 0 30px #0099cc,
+    0 0 40px #0099cc; /* Efeito de brilho */
+  border-radius: 10px; /* Bordas arredondadas */
+}

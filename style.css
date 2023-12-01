@@ -30,10 +30,9 @@ h1 {
   background-image: url('michael2.png'); /* Caminho para sua imagem de fundo */
   background-size: cover;
   background-position: center;
-  padding: 100px 0; /* Ajuste o padding conforme necessário */
+  padding: 100px 0;
 }
 
-/* Mídia query para dispositivos com largura máxima de 768px (tablets e smartphones) */
 @media (max-width: 768px) {
   .content-section {
     background-image: url('hero-responsivo.png');
@@ -41,15 +40,31 @@ h1 {
   }
 }
 
-.text-holder {
-  padding: 50px; /* Ajuste conforme necessário para espaçamento */
-}
-
 .bg2 {
   background-image: url('micheal3.png'); /* Caminho para sua imagem de fundo */
   background-size: cover;
   background-position: center;
   padding: 100px 0; /* Ajuste o padding conforme necessário */
+}
+@media (max-width: 768px) {
+  .bg2 {
+    background-image: url('michaelresp.png');
+    padding-top: 440px;
+  }
+}
+
+.toby-section {
+  background-image: url('TOBY.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+@media (max-width: 768px) {
+  .toby-section {
+    background-image: url('tobyresp.png');
+    padding-top: 400px;
+  }
 }
 
 @keyframes soundWaveEffect {

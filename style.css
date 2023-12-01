@@ -49,7 +49,7 @@ h1 {
   background-image: url('micheal3.png'); /* Caminho para sua imagem de fundo */
   background-size: cover;
   background-position: center;
-  padding-top: 40px;
+  padding: 100px 0; /* Ajuste o padding conforme necessário */
 }
 
 @keyframes soundWaveEffect {

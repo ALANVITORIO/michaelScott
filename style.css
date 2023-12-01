@@ -157,11 +157,10 @@ ol li {
 }
 
 .separador {
-  height: 20px;
-  background: linear-gradient(to right, transparent, #1062b5, transparent);
+  height: 10px;
+  background: linear-gradient(to right, transparent, #fff, transparent);
   filter: blur(20px);
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 5px;
 }
 .background-image {
   position: absolute;

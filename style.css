@@ -67,6 +67,39 @@ h1 {
   }
 }
 
+.secao-ensino {
+  background-image: url('michael.png');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .secao-ensino {
+    background-image: url('ensina-mobile.png');
+    padding-top: 350px;
+  }
+}
+
+.secao-citacao {
+  background-image: url('cita.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+}
+
+.secao-michael-scott {
+  background-image: url('michael4.png'); /* Imagem padrão para desktop */
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .secao-michael-scott {
+    background-image: url('quem-mobile.png');
+    padding-top: 250px;
+  }
+}
+
 @keyframes soundWaveEffect {
   0%,
   100% {

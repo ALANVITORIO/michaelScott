@@ -3,15 +3,17 @@ body {
 }
 /* Estilos padrão para p e h1 */
 p {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #fff;
   font-weight: 300;
   font-size: 1.25rem;
 }
 
 h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #fff;
   font-weight: bolder;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   stroke: #000214;
 }
 
@@ -27,7 +29,7 @@ h1 {
 }
 
 .content-section {
-  background-image: url('michael2.png'); /* Caminho para sua imagem de fundo */
+  background-image: url('michael2.webp'); /* Caminho para sua imagem de fundo */
   background-size: cover;
   background-position: center;
   padding: 100px 0;
@@ -35,26 +37,26 @@ h1 {
 
 @media (max-width: 768px) {
   .content-section {
-    background-image: url('hero-responsivo.png');
+    background-image: url('hero-responsivo.webp');
     padding-top: 440px;
   }
 }
 
 .bg2 {
-  background-image: url('micheal3.png'); /* Caminho para sua imagem de fundo */
+  background-image: url('micheal3.webp'); /* Caminho para sua imagem de fundo */
   background-size: cover;
   background-position: center;
   padding: 100px 0; /* Ajuste o padding conforme necessário */
 }
 @media (max-width: 768px) {
   .bg2 {
-    background-image: url('michaelresp.png');
+    background-image: url('michaelresp.webp');
     padding-top: 440px;
   }
 }
 
 .toby-section {
-  background-image: url('TOBY.png');
+  background-image: url('TOBY.webp');
   background-size: cover;
   background-position: center;
   padding: 100px 0;
@@ -62,40 +64,40 @@ h1 {
 
 @media (max-width: 768px) {
   .toby-section {
-    background-image: url('tobyresp.png');
+    background-image: url('tobyresp.webp');
     padding-top: 400px;
   }
 }
 
 .secao-ensino {
-  background-image: url('michael.png');
+  background-image: url('michael.webp');
   background-size: cover;
   background-position: center;
 }
 
 @media (max-width: 768px) {
   .secao-ensino {
-    background-image: url('ensina-mobile.png');
+    background-image: url('ensina-mobile.webp');
     padding-top: 350px;
   }
 }
 
 .secao-citacao {
-  background-image: url('cita.png');
+  background-image: url('cita.webp');
   background-size: cover;
   background-position: center;
   padding: 100px 0;
 }
 
 .secao-michael-scott {
-  background-image: url('michael4.png'); /* Imagem padrão para desktop */
+  background-image: url('michael4.webp'); /* Imagem padrão para desktop */
   background-size: cover;
   background-position: center;
 }
 
 @media (max-width: 768px) {
   .secao-michael-scott {
-    background-image: url('quem-mobile.png');
+    background-image: url('quem-mobile.webp');
     padding-top: 250px;
   }
 }
